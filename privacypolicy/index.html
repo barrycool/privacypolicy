@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="shortcut icon" href="./imgs/broadlink.ico" type="image/x-icon" />
+    <title>Broadlink Privacy Policy </title>
+    <script src="./libs/vue.min.js"></script>
+    <script src="./langPackage/cn.js"></script>
+    <script src="./langPackage/en.js"></script>
+    <style>
+        body {
+            font-family: "Verdana", "宋体", "Arial Narrow";
+            margin: 0;
+            font-size: 16px;
+            color: #232323;
+            background-color: #FFFFFF;
+            line-height: 28px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+            /*padding: 0;*/
+            /*margin: 0;*/
+        }
+
+        a {
+            text-decoration: none;
+            color: #4F4F4F;
+        }
+
+        a:link {
+            color: #636363;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #636363;
+        }
+
+        a:hover {
+            color: #636363;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: #636363;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: #111;
+            font-weight: 500
+        }
+
+        .text-indent {
+            text-indent: 2em;
+        }
+
+        .tab-content {
+            padding: 0px 30px;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .clear:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        section img {
+            width: 120px;
+            margin: 32px 10px 0;
+            vertical-align: bottom;
+        }
+
+        #content{
+            display: none;
+        }
+
+        /*加载动画*/
+        .loading{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top:0;
+            left: 0;
+            z-index: 50;
+            background-color:black;
+            opacity:0.6;
+        }
+        .dots {
+            position: fixed;
+            padding-top: 40px;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            z-index: 9999;
+            width: 100px;
+            height: 60px;
+            overflow: hidden;
+            text-align: center;
+            background: rgba(194, 173, 147, .7);
+            border-radius: 50%;}
+        .dots > div {
+            margin: 2px;
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-color: #fff;
+            border-radius: 100%;
+            -webkit-animation: dotChange 0.7s 0s infinite linear;
+            animation: dotChange 0.7s 0s infinite linear;
+        }
+        .dots > div:nth-child(2n-1) {
+            -webkit-animation-delay: 0.35s !important;
+            animation-delay: 0.35s !important;
+        }
+        @-webkit-keyframes dotChange {
+            50% { 
+                opacity: 0.2;
+                -webkit-transform: scale(0.75);
+                transform: scale(0.75);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1); 
+            }
+        }
+        @keyframes dotChange {
+            50% {
+                opacity: 0.2;
+                -webkit-transform: scale(0.75);
+                transform: scale(0.75);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1); 
+            }
+        }
+
+
+        @media screen and (min-width: 769px) {
+            section {
+                width: 1211px;
+                margin: 0 auto;
+            }
+
+            section h1 {
+                font-size: 36pt;
+                margin: 20px 0;
+            }
+
+            section h3 {
+                font-size: 20pt;
+            }
+
+            .beian {
+                margin: -20px 200px 0 0;
+                float: right
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                line-height: 20px;
+                font-size: 13px;
+            }
+
+            section h1 {
+                font-size: 1.8em;
+                margin: 20px 0;
+            }
+
+            section h3 {
+                font-size: 1.15em;
+            }
+            section img{
+                width:60px;
+            }
+            .beian {
+                margin-top:-20px;
+                float: right
+            }
+
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!--加载动画-->
+        <div class="loading none" id="loading">
+            <div class="dots">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <section class="tab-content" id="content">
+            <div class="clear">
+                <h1 class="left">{{policy.name}}</h1>
+                <img src="imgs/logo.png" alt="" class="right"/>
+            </div>
+
+            <hr/>
+            <div>
+                <p>{{policy.desc}}</p>
+                <div v-for="(item,$index) in policy.text">
+                    <h3 v-if="item.title">{{$index+1}}.{{item.title}}</h3>
+
+                    <p v-if="item.info">{{item.info}}</p>
+
+                    <ul v-for="row in item.list" v-if="item.list">
+                        <li>• {{row}}</li>
+                    </ul>
+
+                    <p v-if="item.info1">{{item.info1}}</p>
+
+                    <p v-if="item.info2">{{item.info2}}</p>
+
+                    <p v-if="item.info3">{{item.info3}}</p>
+
+                    <p v-if="item.info4">{{item.info4}}</p>
+
+                    <ul v-for="val in item.list1" v-if="item.list1">
+                        <li>• {{val}}</li>
+                    </ul>
+
+                    <p v-if="item.info5">{{item.info5}}</p>
+                </div>
+            </div>
+            <div class="beian" v-show="lang=='zh'"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010802004133"><img
+                    src="imgs/reference.png" alt="picture" style="width:20px;vertical-align: bottom"><span class="num">浙ICP备14039926号-3</span></a></div>
+        </section>
+    </div>
+    <script>
+        new Vue({
+            el:'#app',
+            data:{
+                policy:{},
+                lang:''
+            },
+            created:function(){
+                this.getPolicy();
+            },
+            methods:{
+                getPolicy:function(){
+                    var type = navigator.appName;
+                    var lang;
+                    if(type == 'Netscape'){
+                        lang = navigator.language.substr(0,2)
+                    }else{
+                        lang = navigator.userLanguage.substr(0,2)
+                    }
+                    this.lang = lang;
+                    if(lang=='zh'){
+                        this.policy = stringCN;
+                        document.title = "BroadLink 隐私政策";
+                        document.getElementById("content").style.display = 'block';
+                        document.getElementById("loading").style.display = 'none';   
+                    }else{
+                        document.title = "Broadlink Privacy Policy ";
+                        this.policy = stringEN;
+                        document.getElementById("content").style.display = 'block';
+                        document.getElementById("loading").style.display = 'none';
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>
