@@ -1,11 +1,11 @@
 var stringEN = {
-	title:"Broadlink Privacy Policy",
+	title:"Ai-keys Privacy Policy",
 	name:"Privacy Policy",
-	desc:"BroadLink is committed to maintaining your confidence and trust with respect to the privacy of the personal information we collect from you. Please read this privacy policy carefully to understand our practices about how we collect, use and share your personal information.",
+	desc:"Ai-keys is committed to maintaining your confidence and trust with respect to the privacy of the personal information we collect from you. Please read this privacy policy carefully to understand our practices about how we collect, use and share your personal information.",
 	text:[
 		{
 			title:"About our Privacy Policy",
-			info:"This privacy policy describes how the personal information that is collected when you visit the BroadLink website, application or product that posts a link to this privacy policy ('Service') will be used by Hangzhou Gubei Electronics Technology Co., Ltd. that owns the Service ('BroadLink,' 'we,' 'us' or 'our'). This policy may be supplemented by additional privacy terms or notices set forth on certain areas of the Service.",
+			info:"This privacy policy describes how the personal information that is collected when you visit the Ai-keys website, application or product that posts a link to this privacy policy ('Service') will be used by Hangzhou Gubei Electronics Technology Co., Ltd. that owns the Service ('Ai-keys,' 'we,' 'us' or 'our'). This policy may be supplemented by additional privacy terms or notices set forth on certain areas of the Service.",
 		},
 		{
 			title:"Information We Collect",
@@ -68,7 +68,7 @@ var stringEN = {
 				"to enforce and protect our rights and properties;",
 				"to detect, investigate and help prevent security threats, fraud or other malicious activity;",
 				"to protect the rights, property or safety of our users, employees or others;",
-				"if BroadLink, the Service or a related asset or line of business is acquired by, transferred to or merged with another company.",
+				"if Ai-keys, the Service or a related asset or line of business is acquired by, transferred to or merged with another company.",
 			],
 			info5:"The Service may let you post and share personal information, comments, materials and other content. Any information you disclose publicly may be collected and used by others, may be indexable by search engines, and might not be able to be removed. Please be careful when disclosing personal information in these public areas.",
 		},
@@ -82,7 +82,7 @@ var stringEN = {
 		},
 		{
 			title:"Data Security",
-			info:"BroadLink takes precautions to safeguard your personal information against loss, theft and misuse and unauthorized access, disclosure, alteration and destruction through the use of appropriate administrative, physical and technical security measures.",
+			info:"Ai-keys takes precautions to safeguard your personal information against loss, theft and misuse and unauthorized access, disclosure, alteration and destruction through the use of appropriate administrative, physical and technical security measures.",
 		},
 		{
 			title:"Cross-Border Transfer of Your Information",
@@ -95,10 +95,10 @@ var stringEN = {
 		{
 			title:"Contact",
 			info:"If you have any questions, comments or requests regarding this privacy policy or our processing of your information, please contact:",
-			info1:"Hangzhou Gubei Electronics Technology Co., Ltd.",
-			info2:"Add: Room 106, Building 1, No. 611 Jianghong Road, Binjiang, Hangzhou, Zhejiang 310052, China",
-			info3:"Email: intl@iBroadLink.com",
-			info4:"This privacy policy was last updated on 27 April 2017.",
+			info1:"Shenzhen AI-keys Technology Co., Ltd.",
+			info2:"Add: mabu new village, Baoan, Shenzhen, guangdong 310052, China",
+			info3:"Email: support@iAi-keys.com",
+			info4:"This privacy policy was last updated on 31 April 2018.",
 		}
 	]
 }
