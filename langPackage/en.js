@@ -5,7 +5,7 @@ var stringEN = {
 	text:[
 		{
 			title:"About our Privacy Policy",
-			info:"This privacy policy describes how the personal information that is collected when you visit the Ai-keys website, application or product that posts a link to this privacy policy ('Service') will be used by Hangzhou Gubei Electronics Technology Co., Ltd. that owns the Service ('Ai-keys,' 'we,' 'us' or 'our'). This policy may be supplemented by additional privacy terms or notices set forth on certain areas of the Service.",
+			info:"This privacy policy describes how the personal information that is collected when you visit the Ai-keys website, application or product that posts a link to this privacy policy ('Service') will be used by Shenzhen Ai-keys Technology Co., Ltd. that owns the Service ('Ai-keys,' 'we,' 'us' or 'our'). This policy may be supplemented by additional privacy terms or notices set forth on certain areas of the Service.",
 		},
 		{
 			title:"Information We Collect",
