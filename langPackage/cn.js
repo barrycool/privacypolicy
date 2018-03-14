@@ -86,7 +86,7 @@ var stringCN = {
 			info:"如果您对本隐私政策有任何问题，意见或要求或我们对您的信息的处理，请联系：",
 			info1:"深圳智慧之钥科技有限公司",
 			info2:"A：深圳市宝安区麻布新村",
-			info3:"电子邮件：support@iAi-keys.com",
+			info3:"电子邮件：support@Ai-keys.com",
 			info4:"该隐私权政策最近于2018年4月31日更新。"
 		}
 	]

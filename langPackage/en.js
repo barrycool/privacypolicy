@@ -97,7 +97,7 @@ var stringEN = {
 			info:"If you have any questions, comments or requests regarding this privacy policy or our processing of your information, please contact:",
 			info1:"Shenzhen AI-keys Technology Co., Ltd.",
 			info2:"Add: mabu new village, Baoan, Shenzhen, guangdong 310052, China",
-			info3:"Email: support@iAi-keys.com",
+			info3:"Email: support@Ai-keys.com",
 			info4:"This privacy policy was last updated on 31 April 2018.",
 		}
 	]
